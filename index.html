@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAnuja B S - Portfolio Website </title>
+    <link rel="stylesheet" href="manufortfolio.css">
+    <!-- <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="IMG/Manuja_B_S_Photoroom7.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Java Full Stack Java Developer</p>
+            <h1>Hi, I'm <span>Manuja B S</span><br> From Channapatna</h1>
+        </div>
+    </div>
+</div>
+<!-- -----------about---------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="IMG/Manuja-removebg-preview.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p class="idea">I am a passionate Java developer currently pursuing a Full Stack Java course. I have a keen interest in Java and web development, and I am building my portfolio website to showcase my skills and projects. Excited to explore opportunities in software development and web technologies.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <!-- <li><span>UI/UX</span><br>Designing Web/App interfaces</li> -->
+                        <li><span>Web Development</span><br>Web app Development</li>
+                        <li><span>Java</span><br>Backend Technology</li>
+                         <li><span>JDBC</span><br>Backend Technology</li>
+                         <li><span>Hibernate</span><br>Backend Technology</li>
+                         <li><span>Servelet</span><br>Backend Technology</li>
+                         <li><span>Spring</span><br>Backend Technology</li>
+                        <li><span>SQL</span><br>Backend Technology</li>
+                        <li><span>html</span><br>Frontend Technology</li>
+                        <li><span>css</span><br>Frontend Technology</li>
+                        <li><span>Javascript</span><br>Frontend Technology</li>
+                        
+                        <!-- <li><span>App Development</span><br>Building Android/iOS apps</li> -->
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2025 - Current</span><br>Java Fullstack Development Course Training at JSpider</li>
+                        <!-- <li><span>2019 - 2021</span><br>Team lead at StarApp LLC.</li>
+                        <li><span>2017 - 2019</span><br>UI/UX Design Executive at Coin Digital Ltd.</li> -->
+                        <li><span>2023 - 2024</span><br>Internship Dotch Endavours Private Limited, Python [AI-ML].</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education"> 
+                    <ul>
+                        <li><span>2025</span><br>PUC from St Anne's Pre-University College Channapatna</li>
+                        <li><span>2024</span><br>MCA from VTU Mysore.</li>
+                        <li><span>2022</span><br>B.Sc from PES College Mandya.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---------services---------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>Web Design</h2>
+                <p>We build attractive, adaptable websites that work on any device and help achieve business goals.</p>
+                <a href="https://www.digiwebart.com/wp-content/uploads/2021/05/website-design-company-in-jaipur.jpg">Learn more</a>
+            </div>
+            <div>
+                <i class="fas fa-crop-alt"></i>
+                <h2>UI/UX Design</h2>
+                <p>Creating beautiful and intuitive user interfaces that enhance engagement and create seamless digital experience.</p>
+                <a href="https://buildfire.com/wp-content/uploads/2021/10/Work-Together-695x700.png">Learn more</a>
+            </div>
+            <div>
+                <i class="fab fa-app-store"></i>
+                <h2>App Design</h2>
+                <p>Developing sleek, user-friendly mobile app interface appealing design for a captivating mobile journey.</p>
+                <a href="https://www.smartsight.in/wp-content/uploads/2022/01/Best-Mobile-App-UI-UX-Design-Trends-in-2022.jpg">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ----------portfolio------------ -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUyFauxsdWBPEHPW81WD6f25peDVZz53xZYnhA9qo9IxSsv6T-nQUyPwrQhnT8-Qj5rBg&usqp=CAU ">
+                <div class="layer">
+                    <h3>Online Shopping Web Application</h3>
+                    <p>The project helps manage kids' clothing sales and records efficiently online. It reduces manual work and ensures accurate, user-friendly operation for the business.</p>
+                    <a href="IMG/Kids clothing website.pdf"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvg61L9M8jxT3gKa_-pAz7d8TjLV5TypUJ3A&s ">
+                <div class="layer">
+                    <h3>Mobile network Prediction Web Application</h3>
+                    <p>This project uses machine learning to predict mobile network coverage based on geography, speed, and infrastructure data. It helps identify coverage gaps and optimize network planning. Techniques include decision trees, random forests, and deep learning.</p>
+                    <a href="IMG/PREDICTION OF MOBILE NETWORK USING MACHINE LEARNING TECHNIQUE.pdf"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="data:image/jpeg;base64,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">
+                <div class="layer">
+                    <h3>NICU App</h3>
+                    <p>The NICU Locator is an Android app that provides real-time updates on the availability of NICU units in hospitals. It helps parents, caregivers, and medical professionals quickly find specialized neonatal care, with alerts and notifications for timely updates.</p>
+                    <a href="IMG/NICU_Project.pdf"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!-- ----------contact------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i> manujabs1176@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i> 8431631176</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com/"><i class="fab fa-facebook"></i></a>
+                    <a href=""><i class="fab fa-twitter-square"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/manujabs/"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <a href="IMG/Manuja_B_S_RESUME .pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="Email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © 2025 by Manuja B S | All Rights Reserved| <i class="fas fa-heart"></i>  <a href="https://www.youtube.com/channel/UCkjoHfkLEy7ZT4bA2myJ8xA?sub_confirmation=1"></a></p>
+    </div>
+</div>
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxCJtmhMqGNanUynP1oyHjlz_YeiErRW_pFOdQS_FtUB0KCYhwNnXmclYOuShA_cXcs/exec' // add your own app script link here
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
